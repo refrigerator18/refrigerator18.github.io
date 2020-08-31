@@ -209,7 +209,29 @@
 }
 
 
-@media screen and (max-width:690px) {
+@media screen and (max-width:1085px) {
+
+    .wrapper {
+        grid-template-areas:
+        "Name Resume Resume"
+        "Description Projects Projects"
+        ". . ."
+    }
+
+    .name {
+      padding-left:60px;
+    }
+    .description {
+      padding-left:60px;
+    }
+}
+
+@media screen and (max-width:977px) {
+
+  .main_wrapper {
+    max-width:100%;
+  }
+
 
   .description_text {
     text-align:center;
@@ -227,6 +249,7 @@
 
 
   .wrapper {
+        width:80%;
         grid-template-areas:
             "Name Name Name"
             "Description Description Description"
@@ -238,17 +261,30 @@
 
     }
 
+    .container {
+      margin: 0 auto;
+      width:85%;
+    }
+
   .resume {
 
     width:130px;
 
   }
   .projects {
-    margin-right:25px;
+    margin-top:15px;
     width:130px;
 
   }
 
+  .name {
+      padding-left:15px;
+    }
+    .description {
+      padding-left:15px;
+    }
+
 }
+
 
 
