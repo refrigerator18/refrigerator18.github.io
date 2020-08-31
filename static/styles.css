@@ -267,24 +267,28 @@
     }
 
   .resume {
-
-    width:130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:170px;
 
   }
   .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:170px;
     margin-top:15px;
-    width:130px;
 
   }
 
   .name {
-      padding-left:0px;
+      padding-left:15px;
     }
     .description {
-      padding-left:0px;
+      padding-left:15px;
     }
 
 }
-
 
 
