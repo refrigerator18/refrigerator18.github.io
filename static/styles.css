@@ -283,9 +283,11 @@
   }
 
   .name {
+      padding-right:15px;
       padding-left:15px;
     }
     .description {
+      padding-right:15px;
       padding-left:15px;
     }
 
