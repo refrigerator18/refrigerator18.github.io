@@ -1,0 +1,344 @@
+/*HOMEPAGE*/
+/*HOMEPAGE*/
+/*HOMEPAGE*/
+
+body {
+}
+.underline_wrapper {
+  position: relative;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px -12px;
+}
+
+
+.nav_wrapper {
+    max-width:1200px;
+    margin:0 auto;
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:550px repeat(4, 1fr);
+    align-items:center;
+}
+.nav_links {
+    padding-bottom: 8px;
+    font-family: anziano,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    text-align:center;
+    color:black;
+    opacity:0.75;
+}
+.ryerson_logo {
+    width:126px;
+    height:61px;
+    margin-bottom: 10px;
+    justify-self:left;
+}
+.research_link {
+  justify-self:center;
+}
+
+.people_link {
+  justify-self:center;
+}
+
+.publications_link {
+  justify-self:center;
+}
+
+.contact_link {
+  justify-self:center;
+}
+
+.background_wrapper{
+  max-width: 100%;
+  /*background-color: #fffafa;*/
+  /*background-color: #FAF9F6;*/
+
+}
+
+.main_wrapper {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.wrapper {
+    width:100%;
+    margin:0 auto;
+    padding-top: 6%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 300px 380px;
+    align-items:start;
+    grid-template-areas:
+        "Name Pics Pics"
+        "Twitter Pics Pics"
+        "Twitter Blurb Blurb"
+}
+
+.twitter {
+  grid-area:Twitter;
+  padding-top:80px;
+}
+
+.pics {
+  grid-area:Pics;
+  justify-self: right;
+  align-self: center;
+}
+
+.blurb {
+  grid-area: Blurb;
+  max-width: 625px;
+  justify-self: right;
+}
+
+.mySlides {
+  display:none;
+}
+
+
+.description {
+  padding-left:15px;
+  align-items: start;
+}
+.description_text {
+    /*font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fir   a Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 450;*/
+    
+    font-family: anziano,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    line-height: 1.2;
+    text-align: left;
+
+    margin: 0 0 0.5em 0;
+    font-size: 1.2em;
+    padding-top:30px;
+}
+
+
+.footer_wrapper {
+    width:100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:75px 75px;
+    align-items:start;
+    grid-template-areas:
+        "B1 B2 B3"
+        "B4 B4 B4";
+    background-color: #202020;
+    font-family: anziano,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.b1 {
+  grid-area: B1;
+  border: 1px solid #323232;
+  align-self: stretch;
+}
+.b2 {
+  grid-area: B2;
+  border: 1px solid #323232;
+  align-self: stretch;
+  text-align: center;
+  color: white;
+  z-index: 10;
+
+}
+.b3 {
+  grid-area: B3;
+  border: 1px solid #323232;
+  align-self: stretch;
+}
+.b4 {
+  grid-area: B4;
+  border: 1px solid #323232;
+  align-self: stretch;
+}
+
+/*ANIMATION 1*/
+/*ANIMATION 1*/
+/*ANIMATION 1*/
+
+.name {
+  grid-area:Name;
+  width: 450px;
+}
+.container {
+  width: 100%;
+}
+
+.container .box .title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 125px;
+}
+.container .box .title .block {
+  width: 0%;
+  height: inherit;
+  background: #b2deeb;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  display: flex;
+}
+.container .box .title h1 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fir   a Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /*font-family: anziano,sans-serif;
+  font-weight: 700;
+  font-style: normal;*/
+  color: #333;
+  font-size: 4em;
+  -webkit-animation: mainFadeIn 2s forwards;
+  -o-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+.container .box .title h1 span {
+  width: 0px;
+  height: 0px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #b2deeb;
+  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  margin-left: 5px;
+  margin-top: -10px;
+  position: absolute;
+  bottom: 13px;
+  right: -12px;
+}
+.container .box .role {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: -10px;
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+    100% {
+    width: 10px;
+    height: 10px;
+    background: #b2deeb;
+    bottom: 13px;
+    margin-right: 265px;
+  }
+}
+
+/*ANIMATION 2*/
+/*ANIMATION 2*/
+/*ANIMATION 2*/
+
+.underline_drop {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+.underline_drop:before, .underline_drop:after  {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ffc609; 
+}
+
+.underline_drop:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.underline_drop:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.underline_drop:hover:before, .underline_drop:hover:after, .underline_drop:focus:before, .underline_drop:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.underline_drop:hover:before, .underline_drop:focus:before {
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.underline_drop:hover:after, .underline_drop:focus:after {
+  -webkit-transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*SPECIAL UNDERLINE*/
+/*SPECIAL UNDERLINE*/
+/*SPECIAL UNDERLINE*/
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #ffc609 0%, #b2deeb 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+}
+
