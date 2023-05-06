@@ -63,7 +63,7 @@ body {
 
 table {
   border-collapse: collapse;
-  border: 0.1rem solid #bfbfbf
+  border: 0.1rem solid #bfbfbf;
 }
 .table1{
   width: 490px;
@@ -73,6 +73,14 @@ table {
 }
 .table3{
   width:768px;
+}
+
+.Table3TitleHeader{
+  width:62%;
+}
+
+.Tabl3DateHeader{
+  width:28%;
 }
 
 td, th {
@@ -201,6 +209,10 @@ a:hover {
 
 
 @media screen and (max-width:850px) {
+  body {
+    font-size: 13px;
+  }
+
   .main_wrapper { 
     max-width:95%;
     margin:0 auto;
@@ -254,7 +266,20 @@ a:hover {
   .table3{
     width: 100%;
   }
+}
 
+@media screen and (max-width:550px) {
+  table tr th:nth-child(3),
+  table tr td:nth-child(3) {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width:480px) {
+  .wrapper {
+    grid-template-rows: 80px 25px 325px 145px 25px 180px 155px;
   }
 
 }
