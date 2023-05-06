@@ -1,0 +1,260 @@
+body {
+  font-family: 'Univers LT Pro', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow-x: hidden;
+  color: #000;
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+}
+
+
+.main_wrapper {
+    max-width:768px;
+    margin:0 auto;
+    margin-top:1%;
+}
+
+.wrapper {
+    width:100%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 265px;
+    grid-template-rows: 80px 25px 285px 25px 225px 175px;
+    grid-row-gap:5px;
+    justify-items:start; 
+    align-items:start;
+    grid-template-areas:
+        "Nav Nav Nav"
+        "Header1 Header1 Header1"
+        "Info Info Contact"
+        "Header2 Header2 Header2"
+        "Project Project Project"
+        "Footer Footer Footer";
+
+}
+
+.project {
+  grid-area:Project;
+}
+.nav {
+  grid-area:Nav;
+  align-self: center;
+  width: 100%;
+}
+
+.header1{
+  grid-area:Header1;
+}
+.header2{
+  grid-area: Header2;
+}
+.sectionHeaders{
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Univers Next Pro', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+
+}
+
+.info{
+  grid-area:Info;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0.1rem solid #bfbfbf
+}
+.table1{
+  width: 490px;
+}
+.table2{
+  width:265px;
+}
+.table3{
+  width:768px;
+}
+
+td, th {
+  text-align: left;
+  padding: 0.3rem 0.6rem 0;
+  border-bottom: 0.1rem solid #bfbfbf;
+}
+th {
+  background: #E5E4E2;
+  
+}
+a {     
+  text-decoration: none;
+  color: #00449e;
+  outline: 0; 
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+.underline {
+  border: 0.5px solid lightgray;
+  width: 100%;
+  margin: 0px 0px;
+
+}
+
+.button1 {
+
+  box-sizing: inherit;
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  padding: .15rem 1rem 0;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  border: .08333rem solid #000;
+  border-radius: 0;
+  outline: none;
+  background: #fff;
+  appearance: none;
+  color: #fff;
+  fill: #000;
+  background-color: #137752;
+  font-size:12px;
+}
+
+.button1:hover {
+  background-color:#33332d;
+  color:white;
+}
+
+
+.icon{
+  width: .875em;
+}
+
+.name {
+  /* font-family: Terminus; */
+  font-family: 'Univers Next Pro', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  display: inline;
+}
+
+.button2{
+  box-sizing: inherit;
+  position: relative;
+  top: -2px;
+  padding: .15rem 1rem 0;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  border: .08333rem solid #000;
+  border-radius: 0;
+  outline: none;
+  background: #fff;
+  appearance: none;
+  color: #000;
+  fill: #000;
+  background-color: #FFCE6E;;
+  font-size:14px;
+  float: right;
+  box-shadow: 3px 3px #bbb;
+}
+
+.button2:hover {
+  background-color:#33332d;
+  color:white;
+}
+
+
+.blink_me {
+  animation: blinker 4s linear infinite;
+  font-size: 50px;
+  color: #FFBA33;
+  line-height: 0;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.footer{
+  grid-area: Footer;
+  width: 100%;
+  opacity:0.5;
+}
+
+.footer_text{
+  color: gray;
+  font-size: 12px;
+}
+
+
+
+@media screen and (max-width:850px) {
+  .main_wrapper { 
+    max-width:95%;
+    margin:0 auto;
+    margin-top:1%;
+    }
+
+  .wrapper {
+      width:100%;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 80px 25px 265px 185px 25px 225px 175px;
+      grid-row-gap:5px;
+      justify-items:start; 
+      align-items:start;
+      grid-template-areas:
+          "Nav Nav Nav"
+          "Header1 Header1 Header1"
+          "Info Info Info"
+          "Contact Contact Contact"
+          "Header2 Header2 Header2"
+          "Project Project Project"
+          "Footer Footer Footer";
+  }
+
+  .nav{
+    width: 100%;
+  }
+  .underline{
+    width: 100%;
+  }
+
+  .info {
+    width:100%;
+  }
+
+  .table1{
+    width:100%;
+  }
+
+  .contact{
+    width:100%;
+  }
+  .table2{
+    width:100%
+  }
+
+  .project{
+    width:100%
+  }
+  .table3{
+    width: 100%;
+  }
+
+  }
+
+}
