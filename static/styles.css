@@ -182,7 +182,7 @@ a:hover {
 
 
 .blink_me {
-  animation: blinker 4s linear infinite;
+  animation: blinker 3.5s linear infinite;
   font-size: 50px;
   color: #FFBA33;
   line-height: 0;
@@ -279,7 +279,7 @@ a:hover {
 
 @media screen and (max-width:480px) {
   .wrapper {
-    grid-template-rows: 80px 25px 325px 145px 25px 180px 155px;
+    grid-template-rows: 80px 25px 305px 155px 25px 180px 155px;
   }
 
 }
