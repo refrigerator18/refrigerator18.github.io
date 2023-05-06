@@ -279,7 +279,7 @@ a:hover {
 
 @media screen and (max-width:480px) {
   .wrapper {
-    grid-template-rows: 80px 25px 275px 155px 25px 180px 155px;
+    grid-template-rows: 80px 25px 305px 155px 25px 180px 155px;
   }
 
 }
