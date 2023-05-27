@@ -1,6 +1,6 @@
 body {
-  font-family: 'Univers LT Pro', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family:'Univers LT Pro', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 13px;
   font-weight: normal;
   overflow-x: hidden;
   color: #000;
@@ -21,7 +21,7 @@ body {
     margin:0 auto;
     display:grid;
     grid-template-columns: 1fr 1fr 265px;
-    grid-template-rows: 80px 25px 285px 25px 225px 175px;
+    grid-template-rows: 80px 25px 150px 135px 25px 225px 125px;
     grid-row-gap:5px;
     justify-items:start; 
     align-items:start;
@@ -29,10 +29,15 @@ body {
         "Nav Nav Nav"
         "Header1 Header1 Header1"
         "Info Info Contact"
+        "Info Info About"
         "Header2 Header2 Header2"
         "Project Project Project"
         "Footer Footer Footer";
 
+}
+
+.about{
+  grid-area:About;
 }
 
 .project {
@@ -138,6 +143,10 @@ a:hover {
   color:white;
 }
 
+.button1.unfinished{
+  cursor: default;
+  background-color:#818589;
+}
 
 .icon{
   width: .875em;
@@ -182,11 +191,24 @@ a:hover {
 
 
 .blink_me {
-  animation: blinker 3.5s linear infinite;
+  animation: blinker 3s linear infinite;
   font-size: 50px;
   color: #FFBA33;
   line-height: 0;
 }
+
+blockquote {
+  font-weight: normal;
+  color: #71797E;
+  text-rendering: optimizeLegibility;
+  box-sizing: inherit;
+  margin: 0 0;
+  padding: .4rem .8rem;
+  border-left: .1rem solid #71797E;
+}
+
+
+
 
 @keyframes blinker {
   50% {
@@ -224,7 +246,7 @@ a:hover {
       margin:0 auto;
       display:grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 80px 25px 265px 185px 25px 225px 175px;
+      grid-template-rows: 80px 25px 265px 165px 60px 25px 260px 175px;
       grid-row-gap:5px;
       justify-items:start; 
       align-items:start;
@@ -233,6 +255,7 @@ a:hover {
           "Header1 Header1 Header1"
           "Info Info Info"
           "Contact Contact Contact"
+          "About About About"
           "Header2 Header2 Header2"
           "Project Project Project"
           "Footer Footer Footer";
@@ -274,12 +297,18 @@ a:hover {
     display: none;
   }
 
+  .wrapper {
+    grid-template-rows: 80px 25px 265px 165px 80px 25px 260px 100px;
+  }
+
+
+  
 }
 
 
 @media screen and (max-width:480px) {
   .wrapper {
-    grid-template-rows: 80px 25px 305px 155px 25px 180px 155px;
+    grid-template-rows: 80px 25px 305px 155px 80px 25px 260px 100px;
   }
 
 }
