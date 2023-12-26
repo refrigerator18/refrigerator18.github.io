@@ -330,6 +330,7 @@ blockquote {
 
 @media screen and (max-width:480px) {
   .wrapper {
-    grid-template-rows: 80px 25px 265px 145px 90px 25px 250px 40px;
+    grid-template-rows: 80px 25px 285px 145px 90px 25px 250px 40px;
   }
+
 }
