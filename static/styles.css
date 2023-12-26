@@ -323,7 +323,7 @@ blockquote {
   }
 
   .wrapper {
-    grid-template-rows: 80px 25px 245px 145px 90px 25px 250px 40px;
+    grid-template-rows: 80px 25px 255px 145px 90px 25px 250px 40px;
   }  
 }
 
