@@ -1,7 +1,31 @@
+/* Fonts */
+@font-face {
+  font-family: 'Univers Next Pro';
+  src: url(../fonts/Univers\ Next\ Pro\ Heavy.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Univers LT Pro';
+  src: url(../fonts/UniversLTPro-55Roman.woff) format('woff');
+  font-style: normal;
+  font-weight:400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Univers LT Pro';
+  src: url(../fonts/UniversLTPro-65BoldOblique.woff) format('woff');
+  font-style: bold;
+  font-weight:700;
+  font-display: swap;
+}
+
+
 body {
-  font-family:'Univers LT Pro', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family:'Univers LT Pro';
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 400;
   overflow-x: hidden;
   color: #000;
   background: #fff;
@@ -57,8 +81,8 @@ body {
 }
 .sectionHeaders{
   font-weight: 700;
-  font-size: 15px;
-  font-family: 'Univers Next Pro', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 15.5px;
+  font-family: 'Univers Next Pro';
 
 }
 
@@ -247,7 +271,7 @@ blockquote {
       margin:0 auto;
       display:grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 80px 25px 265px 145px 90px 25px 250px 40px;
+      grid-template-rows: 80px 25px 245px 145px 90px 25px 250px 40px;
       grid-row-gap:5px;
       justify-items:start; 
       align-items:start;
@@ -299,13 +323,13 @@ blockquote {
   }
 
   .wrapper {
-    grid-template-rows: 80px 25px 265px 145px 90px 25px 250px 40px;
+    grid-template-rows: 80px 25px 245px 145px 90px 25px 250px 40px;
   }  
 }
 
 
 @media screen and (max-width:480px) {
   .wrapper {
-    grid-template-rows: 80px 25px 305px 145px 90px 25px 250px 40px;
+    grid-template-rows: 80px 25px 265px 145px 90px 25px 250px 40px;
   }
 }
